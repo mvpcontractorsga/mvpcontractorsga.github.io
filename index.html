@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MVP Contractors LLC | Atlanta, GA</title>
+<meta name="description" content="MVP Contractors LLC provides remodeling, repairs, property maintenance, fencing, decks, landscaping, fallen tree and debris removal, junk removal, demolition and more throughout Atlanta and surrounding cities.">
+<style>
+:root {
+  --blue:#087fd8;
+  --dark:#08131f;
+  --light:#f4f8fc;
+  --text:#17212b;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:Arial,Helvetica,sans-serif; color:var(--text); line-height:1.6; background:white; }
+a { color:inherit; text-decoration:none; }
+.nav {
+  position:sticky; top:0; z-index:10; background:rgba(8,19,31,.96);
+  padding:12px 5%; display:flex; align-items:center; justify-content:space-between;
+}
+.nav img { width:110px; height:auto; }
+.nav-links { display:flex; gap:22px; color:white; font-weight:700; }
+.nav-links a:hover { color:#43b7ff; }
+.hero {
+  background:linear-gradient(135deg,#07131f 0%,#0b3557 55%,#078fe5 100%);
+  color:white; padding:70px 5% 80px; text-align:center;
+}
+.hero img { width:min(330px,80%); margin-bottom:20px; border-radius:12px; }
+.hero h1 { font-size:clamp(2.1rem,5vw,4.2rem); line-height:1.05; margin-bottom:15px; }
+.hero p { font-size:clamp(1.05rem,2vw,1.35rem); max-width:800px; margin:0 auto 28px; }
+.buttons { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+.btn {
+  display:inline-block; padding:14px 24px; border-radius:8px; font-weight:800;
+  background:#fff; color:#087fd8; box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+.btn.primary { background:#0b8fe5; color:white; }
+section { padding:65px 5%; }
+.section-title { text-align:center; font-size:2.2rem; margin-bottom:12px; }
+.section-subtitle { text-align:center; max-width:750px; margin:0 auto 35px; color:#56616c; }
+.grid { max-width:1100px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:18px; }
+.card {
+  background:white; border:1px solid #dce5ed; border-radius:14px; padding:25px;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+.card h3 { color:#087fd8; margin-bottom:7px; }
+.about { background:var(--light); }
+.about-inner { max-width:900px; margin:auto; text-align:center; }
+.contact { background:#07131f; color:white; }
+.contact .section-subtitle { color:#c8d5df; }
+.contact-grid { max-width:900px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+.contact-card { padding:25px; border:1px solid #294154; border-radius:12px; text-align:center; }
+.contact-card h3 { color:#4bb9ff; margin-bottom:7px; }
+footer { background:#040b11; color:#aebbc5; text-align:center; padding:22px 5%; font-size:.9rem; }
+@media(max-width:650px) {
+  .nav-links { display:none; }
+  .hero { padding-top:45px; }
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="#top"><img src="mvp-logo.png" alt="MVP Contractors LLC logo"></a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img src="mvp-logo.png" alt="MVP Contractors LLC">
+  <h1>WE DO IT ALL.</h1>
+  <p>Reliable remodeling, property maintenance, cleanup, fencing, landscaping and contractor services throughout Atlanta and surrounding cities.</p>
+  <div class="buttons">
+    <a class="btn primary" href="tel:4702925200">Call 470-292-5200</a>
+    <a class="btn" href="mailto:mvpcontractors26@gmail.com?subject=Free%20Estimate%20Request">Request a Free Estimate</a>
+  </div>
+</header>
+
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-subtitle">From property cleanup to repairs and outdoor projects, MVP Contractors LLC is ready to help.</p>
+  <div class="grid">
+    <div class="card"><h3>Remodeling & Repairs</h3><p>Interior and exterior improvements, repairs and renovation projects.</p></div>
+    <div class="card"><h3>Fallen Tree & Debris Removal</h3><p>Cleanup and removal of fallen trees, branches and property debris.</p></div>
+    <div class="card"><h3>Junk Removal</h3><p>Hauling and removal of unwanted items and property junk.</p></div>
+    <div class="card"><h3>Fencing & Decks</h3><p>Fence and deck projects to improve your property's function and appearance.</p></div>
+    <div class="card"><h3>Demolition</h3><p>Demolition and tear-out work for residential and property projects.</p></div>
+    <div class="card"><h3>Property Maintenance</h3><p>General property upkeep, cleanup and maintenance services.</p></div>
+    <div class="card"><h3>Landscaping</h3><p>Outdoor property improvements, cleanup and landscaping services.</p></div>
+    <div class="card"><h3>And More</h3><p>Have a project that isn't listed? Give us a call and let's discuss it.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <h2 class="section-title">Why MVP Contractors?</h2>
+    <p class="section-subtitle">MVP Contractors LLC is focused on dependable service, quality workmanship and getting the job done right. We serve Atlanta and surrounding cities and are available for a wide range of residential and property projects.</p>
+    <a class="btn primary" href="tel:4702925200">Call for a Free Estimate</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Let's Talk About Your Project</h2>
+  <p class="section-subtitle">Call, text or email MVP Contractors LLC today.</p>
+  <div class="contact-grid">
+    <div class="contact-card"><h3>Call or Text</h3><a href="tel:4702925200">470-292-5200</a></div>
+    <div class="contact-card"><h3>Email</h3><a href="mailto:mvpcontractors26@gmail.com">mvpcontractors26@gmail.com</a></div>
+    <div class="contact-card"><h3>Service Area</h3><p>Atlanta & surrounding cities</p></div>
+  </div>
+  <div class="buttons" style="margin-top:28px">
+    <a class="btn primary" href="tel:4702925200">Call Now</a>
+    <a class="btn" href="mailto:mvpcontractors26@gmail.com?subject=Project%20Inquiry">Email Us</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 MVP Contractors LLC • Atlanta, Georgia & surrounding cities
+</footer>
+</body>
+</html>
